@@ -1,4 +1,5 @@
-ALIAS_VE="alias ve='docker run --rm -it -v $PWD:/tmp -w /tmp valgrind'"
+ALIAS_VE="alias ve='docker run --rm -it -v \$PWD:/tmp -w /tmp valgrind'"
+
 
 echo "\033[1;32mBuilding valgrind docker image...\033[0m"
 docker build -t valgrind .
